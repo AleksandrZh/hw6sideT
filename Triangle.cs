@@ -8,6 +8,12 @@
         private double perimeter;
         private double area;
 
+        public double Area
+        {
+            get { return area; }
+
+        }
+
 
         public Triangle(double sideA, double sideB, double sideC)
         {
@@ -24,7 +30,7 @@
             if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA)
             {
                 perimeter = Perimeter();
-                area = Area();
+                area = AreaT();
                 Console.WriteLine($"Треугольник со сторонами  A: {sideA} B: {sideB} C: {sideC} существует. Его периметер : {perimeter}, площадь: {area}");
             }
             else
@@ -38,7 +44,7 @@
             return sideA + sideB + sideC;
         }
 
-        private double Area()
+        private double AreaT()
         {
 
             double p = ((sideA + sideB + sideC) / 2);

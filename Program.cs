@@ -19,6 +19,8 @@
 
             trian.Show();
 
+            Console.WriteLine($"Площадь треугольника: {trian.Area}");
+
 
         }
     }
